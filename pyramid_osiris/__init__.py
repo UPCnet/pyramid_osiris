@@ -16,7 +16,7 @@ class Connector(object):
             server.
         """
         try:
-            token = self.client.geToken(login, password)
+            token = self.client.getToken(login, password)
             return [login, token]
         except AttributeError:
             return None
